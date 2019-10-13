@@ -1,0 +1,79 @@
+body {
+  background-color: #FFF;
+  margin: .5rem;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.bs {
+  -webkit-box-shadow: inset 0px 0px 0px .5px rgba(224,224,224,1), 0px 0px 0px .5px rgba(224,224,224,1);
+  -moz-box-shadow: inset 0px 0px 0px .5px rgba(224,224,224,1), 0px 0px 0px .5px rgba(224,224,224,1);
+  box-shadow: inset 0px 0px 0px .5px rgba(224,224,224,1), 0px 0px 0px .5px rgba(224,224,224,1);
+}
+
+.chartContainer {
+  display: block;
+  width: 70rem;
+  height: 3rem;
+  margin: 0 auto;
+  background-color: #EEE;
+}
+
+.labelH {
+  display: block;
+  position: relative;
+  width: 240px;
+  height: 100%;
+  float: left;
+
+  font-family: 'Roboto Mono' !important;
+  font-weight: normal !important;
+  font-size: 12px;
+  line-height: 1rem;
+  color: black;
+}
+
+.labelH-item {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  background-color: #FFF;
+}
+
+.labelH p {
+  margin: 0;
+  max-width: 100%;
+  line-height: 1.375rem;
+  padding: 13px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+
+.chartContent {
+  width: 880px;
+  margin: 0 auto;
+  float: left;
+}
+
+.chartContent svg g:nth-child(3) text {
+  fill: black;
+  font-family: 'Roboto Mono' !important;
+  font-weight: normal !important;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: -.5px;
+}
+
+.chartContent svg g:nth-child(9) text {
+  display: none;
+}
